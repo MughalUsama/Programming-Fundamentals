@@ -1,0 +1,74 @@
+Library : <iostream>
+(stream insertion):
+cout<<
+(stream extraction):
+cin>>
+
+cin.get()
+cin.getline()
+------------------------------
+
+Escape sequence:
+[use backslash to print " or \ on console using escape sequence such as \"]
+new line:
+\n
+tab:
+\t
+------------------------------
+Data types: int ,float,double,char,bool,long double, short int, long long int,unsigned int.
+Topics: Type coercion, type casting.
+--------------------------------
+Library: <cmath>
+commands: pow(), sqrt(), rand(), srand().
+----------------------------------
+Library: <ctime>
+command: time(0)   ----used with srand() as srand(time(0))
+
+--------------------------------
+Condition:
+1- if()
+   {
+	code
+   }
+
+2- if()
+   {
+	code
+   } 
+   else
+   {
+	code
+   }
+
+3- if()
+   {
+	code
+   }
+   else if()
+   {
+	code
+   } 
+
+NESTED if
+----------------------
+Logical operators:
+1- AND &&
+2- OR ||
+3- NOT !
+----------------------
+Comparison
+1- <
+2- >
+3- ==
+4- <=
+5- >=
+6- !=
+------------------------
+Library: <iomanip>
+1- setw()      [used with cout] 
+2- left        [used for alignment with setw() in cout as cout<< left<< setw()]
+3- right       [used for alignment with setw() in cout as cout<< right<< setw()]
+4- setprecision() [used with cout][]
+5- strcpy()     or       strcpy_s()
+6- strcmp()
+7- #define _CRT_NO_WARNINGS

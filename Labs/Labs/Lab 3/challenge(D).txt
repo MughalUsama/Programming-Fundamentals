@@ -1,0 +1,16 @@
+declare row,col,square,rect
+print "enter total no of squares:"
+input square
+row=1
+repeat until (row<=square)
+	col=row
+	repeat until (row*col<=square)
+		rect=rect+1
+		col=col+1
+	row=row+1
+Print "No. of Rectangles: ",rect
+
+
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::TESTED::::::::::::::::::::::::::::::::::::::::::::::::::::::::

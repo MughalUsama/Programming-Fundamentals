@@ -1,0 +1,26 @@
+Declare num, digitOne, digitTwo, Repeat, counterB, counterA
+counterB=1
+repeat=-1
+digitOne=num%10
+num=num/10
+counterA=1
+Repeat Until(num>=10)
+	digitTwo=num%10
+	if (digitOne==digitTwo)
+		counterB=counterB+1
+		if (counterB>counterA)
+			counterA=counterB
+			repeat=digitOne
+	otherwise 
+		counterB=1
+	digitOne=digitTwo
+	num=num/10
+if (repeat=-1)
+	print "no repeating digit"
+	otherwise
+	print repeat
+
+
+
+
+::::::::::::::::::::::::::::::::::::::TESTED:::::::::::::::::::::::::::::::::::::::::::::::

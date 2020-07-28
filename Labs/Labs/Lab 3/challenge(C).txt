@@ -1,0 +1,24 @@
+Declare interestRateMonth, interestRateYear, interestMonth, monthlyPayment, loanAmount, monthlyPaidLoan, month
+Print "Enter the loan amount: "
+input loanAmount
+Print "Enter the interest rate in %: "
+input interestRateYear
+Print "Enter the monthly payment: "
+input monthlyPayment
+month=0
+interestRateMonth = interestRateYear/12
+interestMonth=loanAmount/100*interestRateMonth
+if (monthlyPayment<interestMonth)
+	Print "Warning: Monthly payment is too low! With this rate of monthly amount loan cannot be paid"
+otherwise
+	Repeat Until(loanAmount>0)
+		monthlyPaidLoan=monthlyPayment-interestMonth
+		loanAmount=loanAmount-monthlyPaidLoan
+		month=month+1
+		interestMonth=loanAmount/100*interestRateMonth
+	Print"Months required to repay the loan are: ",month   
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;TESTED;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

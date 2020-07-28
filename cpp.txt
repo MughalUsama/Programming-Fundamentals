@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+
+void getInputInArray(int [40], int [40], int);
+void swapElementsOfArray(int [40], int [40], int );
+void displaySwappedArrays(int [40], int [40], int);
+int main()
+{
+	int sizeOfArrays;
+	int array1[40], array2[40];
+	cout << "How many elements you want to enter in each array: ";
+	cin >> sizeOfArrays;
+	getInputInArray(array1, array2, sizeOfArrays);
+
+	swapElementsOfArray(array1, array2, sizeOfArrays);
+
+	displaySwappedArrays(array1, array2, sizeOfArrays);
+	
+	cout << "\n";
+	system("pause");
+	return 0;
+}
+
+void getInputInArray(int array1[40], int array2[40], int size)
+{
+	
+		cout << "\n\t\tInput in array 1 : \n";
+		for (int j = 0; j < size; j=j+1)
+		{
+			cout << "Enter no in array1[" << j << "] : ";
+			cin >> array1[j];
+		}
+		cout << "\n\t\tInput in array 2 : \n";
+		for (int j = 0; j < size; j = j + 1)
+		{
+			cout << "Enter no in array2[" << j << "] : ";
+			cin >> array2[j];
+		}
+		
+}
+
+
+void swapElementsOfArray(int array1[40], int array2[40], int size)
+{
+	int temp;
+	for (int j = 0; j < size; j = j + 1)
+	{
+		temp = array1[j];
+		array1[j] = array2[j];
+		array2[j] = temp;
+		
+	}
+}
+
+void displaySwappedArrays(int array1[40], int array2[40], int size)
+{
+	cout << "\n\t\t:Swapped arrays:\n    Array1  \t\t\t   Array2";
+	for (int i = 0; i < size; i=i+1)
+	{
+		cout << "\nNo in array1[" << i << "] : " << array1[i] << "\t\tNo in array2[" << i << "] : " << array2[i];
+	}
+}

@@ -1,0 +1,18 @@
+Declare totalLocker, div, openLockers, count, locker
+div=1
+locker=1
+openLockers=0
+print "Enter Total Lockers: "
+input totalLockers
+Repeat Until (locker<=totalLocker)
+    count=0
+    Repeat until(div<=locker)
+	if (locker%div==0)
+	   count=count+1
+	div=div+1
+    if(count%2==1)
+	openLockers=openLockers+1
+    locker=locker+1
+Print "No of open lockers is :",openLockers
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::CHECKED::::::::::::::::::::::::::::::::::::::::::::::
